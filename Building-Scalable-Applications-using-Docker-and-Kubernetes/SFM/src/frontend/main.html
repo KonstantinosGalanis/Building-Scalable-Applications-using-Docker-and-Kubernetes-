@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>SFM</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <p class="flow-text">Current Folder</p>
+      <input type="text" name="" id="folder-location-txt" class="browser-default col s11" value="C:/">
+      <input type="button" value="Go" id="read-folder-btn" class="col s1">
+    </div>
+    <div class="row">
+      <a href="#" class="btn waves-effect waves-light orange white-text" id="back-btn">Back</a>
+      <a href="#" class="btn waves-effect waves-light orange white-text" id="up-btn">Up</a>
+      <a href="#" class="btn waves-effect waves-light orange white-text" id="crt-btn">Create</a>
+      <a href="#" class="btn waves-effect waves-light orange white-text" id="dlt-btn">Delete</a>
+      <a href="#" class="btn waves-effect waves-light orange white-text" id="mv-btn">Move</a>
+      <a href="#" class="btn waves-effect waves-light orange white-text" id="rnm-btn">Rename</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="folders collection" id="folder-section">
+      <a href="#!" class="collection-item folder-item">item 1</a>
+      <a href="#!" class="collection-item folder-item">item 1</a>
+    </div>
+  </div>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./script/materialize.min.js"></script>
+  <script src="./script/filemanager.js"></script>
+</body>
+
+</html>
